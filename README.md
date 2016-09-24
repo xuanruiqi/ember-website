@@ -1,7 +1,6 @@
-# Xuanruiqicom-ember
+# xuanruiqi.com Frontend
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Frontend for xuanruiqi.com.
 
 ## Prerequisites
 
@@ -13,9 +12,16 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+## License
+
+Licensed under the Mozilla Public License. See "License" file for details. 
+xuanruiqi.com frontend contains code from the "Flatly" CSS template by 
+[Bootswatch](https://bootswatch.com), which is licensed under the MIT 
+License.
+
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:xuanruiqi/xuanruiqi.github.io.git`
 * `cd xuanruiqicom-ember`
 * `npm install`
 * `bower install`
@@ -29,11 +35,6 @@ You will need the following things properly installed on your computer.
 
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
 ### Building
 
 * `ember build` (development)
@@ -41,7 +42,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+You may deploy your application after building as a static single-page application on 
+any static storage platform, such as Github Pages or Amazon S3. You may also deploy on 
+clouds, such as Heroku or Amazon Elastic Beanstalk.
 
 ## Further Reading / Useful Links
 
