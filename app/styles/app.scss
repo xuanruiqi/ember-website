@@ -17,6 +17,19 @@ body {
     margin-bottom: 70px;
 }
 
+img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 90%;
+}
+
 #credits {
     width: 100%;
 }

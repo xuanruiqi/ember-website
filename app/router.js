@@ -19,6 +19,7 @@ Router.map(function() {
   this.route('quotes');
   this.route('credits');
   this.route('contact');
+  this.route('projects');
 });
 
 export default Router;
