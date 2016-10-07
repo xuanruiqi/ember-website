@@ -14,9 +14,9 @@ You will need the following things properly installed on your computer.
 
 ## License
 
-Licensed under the Mozilla Public License. See "License" file for details. 
-xuanruiqi.com frontend contains code from the "Flatly" CSS template by 
-[Bootswatch](https://bootswatch.com), which is licensed under the MIT 
+Licensed under the Mozilla Public License. See "License" file for details.
+xuanruiqi.com frontend contains code from the "Flatly" CSS template by
+[Bootswatch](https://bootswatch.com), which is licensed under the MIT
 License.
 
 ## Installation
@@ -42,9 +42,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-You may deploy your application after building as a static single-page application on 
-any static storage platform, such as Github Pages or Amazon S3. You may also deploy on 
+You may deploy your application after building as a static single-page application on
+any static storage platform, such as Github Pages or Amazon S3. You may also deploy on
 clouds, such as Heroku or Amazon Elastic Beanstalk.
+
+It is recommended that you use the `ember-cli-deploy` tool to make a production
+build and deploy your application.
 
 ## Further Reading / Useful Links
 
@@ -53,4 +56,3 @@ clouds, such as Heroku or Amazon Elastic Beanstalk.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
