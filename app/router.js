@@ -20,6 +20,7 @@ Router.map(function() {
   this.route('credits');
   this.route('contact');
   this.route('projects');
+  this.route('work-on');
 });
 
 export default Router;
