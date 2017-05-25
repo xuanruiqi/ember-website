@@ -20,8 +20,10 @@ Router.map(function() {
   this.route('credits');
   this.route('contact');
   this.route('projects');
-  this.route('work-on');
   this.route('personal');
+  this.route('cv');
+  this.route('cv-cn');
+  this.route('cv-jp');
 });
 
 export default Router;
