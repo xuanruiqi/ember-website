@@ -6,6 +6,7 @@
 @import 'variables';
 @import 'bootstrap';
 @import 'bootswatch';
+@import 'font-awesome';
 
 html {
   position: relative;
@@ -52,4 +53,66 @@ figcaption {
 
 #lang-box {
     margin: 5px;
+}
+
+.fa {
+    color: white;
+    text-align: center;
+    width: 100% !important;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 36px;
+    font-size: 1.6em;
+}
+
+.fa-github:hover {
+    color: #333;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.fa-envelope:hover {
+    color: #00a1f1;
+}
+
+.btn-contact {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.btn-contact:hover {
+    background-color: white;
+}
+
+.btn-github {
+    background-color: #333;
+}
+
+.btn-twitter {
+    background-color: #00aced;
+}
+
+.btn-linkedin {
+    background-color: #0077b5;
+}
+
+.btn-envelope {
+    background-color: #00a1f1;
+}
+
+#home-box {
+    background-color: #2c6080; 
+    border-radius: 3px; 
+    border: 1px solid transparent;
+    color: white;
 }
