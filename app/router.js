@@ -6,10 +6,10 @@
 
 'use strict';
 
-import Ember from 'ember';
+import EmberRouter from '@ember/routing/router';
 import config from './config/environment';
 
-const Router = Ember.Router.extend({
+const Router = EmberRouter.extend({
   location: config.locationType,
   rootURL: config.rootURL
 });
@@ -19,7 +19,8 @@ Router.map(function() {
   this.route('quotes');
   this.route('credits');
   this.route('contact');
-  this.route('projects');
+  this.route('research');
+  this.route('code');
   this.route('personal');
   this.route('cv');
   this.route('cv-cn');

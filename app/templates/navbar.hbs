@@ -5,27 +5,23 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/.
 -->
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Xuanrui</a>
-    </div>
+    <a class="navbar-brand" href="#">Xuanrui</a>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        {{#link-to 'index' tagName="li"}}<a href="">Home</a>{{/link-to}}
-        {{#link-to 'cv' tagName="li"}}<a href="">Curriculum Vitae</a>{{/link-to}}
-        {{#link-to 'projects' tagName="li"}}<a href="">Projects</a>{{/link-to}}
-        {{#link-to 'more' tagName="li"}}<a href="">Professional</a>{{/link-to}}
-        {{#link-to 'personal' tagName="li"}}<a href="">Personal</a>{{/link-to}}
-        {{#link-to 'contact' tagName="li"}}<a href="">Contact</a>{{/link-to}}
-        <li class="navopt"><a href="http://blog.xuanruiqi.com">Blog</a></li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        {{#link-to 'index' tagName="li" class="nav-item"}}<a class="nav-link" href="">Home</a>{{/link-to}}
+        {{#link-to 'cv' tagName="li" class="nav-item"}}<a class="nav-link" href="">Curriculum Vitae</a>{{/link-to}}
+        {{#link-to 'research' tagName="li" class="nav-item"}}<a class="nav-link" href="">Research</a>{{/link-to}}
+        {{#link-to 'code' tagName="li" class="nav-item"}}<a class="nav-link" href="">Code</a>{{/link-to}}
+        {{#link-to 'personal' tagName="li" class="nav-item"}}<a class="nav-link" href="">Personal</a>{{/link-to}}
+        {{#link-to 'contact' tagName="li" class="nav-item"}}<a class="nav-link" href="">Contact</a>{{/link-to}}
+        <li class="nav-item"><a class="nav-link" href="http://blog.xuanruiqi.com">Blog</a></li>
       </ul>
     </div>
   </div>

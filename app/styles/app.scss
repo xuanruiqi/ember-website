@@ -1,22 +1,23 @@
-// Copyright(c) 2016 Xuanrui Qi
+// Copyright(c) 2018 Xuanrui Qi
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 @import 'variables';
-@import 'bootstrap';
+@import "ember-bootstrap/bootstrap";
 @import 'bootswatch';
 @import 'font-awesome';
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-    padding-top: 70px;
+    padding: 100px 0 0 0;
     margin-bottom: 70px;
 }
+
 
 img {
     display:block;
@@ -37,6 +38,7 @@ figcaption {
 
 .footer {
     height: 70px;
+    padding-top: 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
