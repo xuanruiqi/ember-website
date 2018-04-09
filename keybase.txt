@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/xuanruiqi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.xuanruiqi.com
+  * I am xuanruiqi (https://keybase.io/xuanruiqi) on keybase.
+  * I have a public key ASASNiLPeBiEeRekpmssXtGYzMo4ubz1J1MqtSYgTOFQVAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120123622cf7818847917a4a66b2c5ed198ccca38b9bcf527532ab526204ce150540a",
+      "host": "keybase.io",
+      "kid": "0120123622cf7818847917a4a66b2c5ed198ccca38b9bcf527532ab526204ce150540a",
+      "uid": "1e9ea36f2bbab28f7bddbcfd8350cc19",
+      "username": "xuanruiqi"
+    },
+    "merkle_root": {
+      "ctime": 1523258026,
+      "hash": "d6f6f7f266f6cf7035570ad9c860d9fe9cb59ad248201068e6fdc6b9b6024db9444f29dcd74a86bdbb29e723e3fd92f7ece77f4941b55d5d80e3a89f9e52d442",
+      "hash_meta": "9648d596bbf8c440d6d7a557271a8c2af3fadaec89f942c50a7df4993bb07c7e",
+      "seqno": 2357437
+    },
+    "service": {
+      "entropy": "72ViOkgaOYPqcMGAMWAiWORN",
+      "hostname": "www.xuanruiqi.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1523258056,
+  "expire_in": 504576000,
+  "prev": "f36e2fd8533037fedafd42643af8b368f7d258bd85fbdba3cbf2baf95a8df9dc",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgEjYiz3gYhHkXpKZrLF7RmMzKOLm89SdTKrUmIEzhUFQKp3BheWxvYWTESpcCD8Qg824v2FMwN/7a/UJkOvizaPfSWL2F+9ujy/K6+VqN+dzEIMSRuayMojF1Tn/cCHk+HbctdgNkN1W29Nt6fzV+YkIqAgHCo3NpZ8RA6pwRs/bSHbviL9I1oxrWFc1uP33bglZFnnenJ+u16oHgId8txB7ASMjoW2cqhU168dnNcjTzRLFiVxK2UC1UC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJpnAnLPpsBH2NOyB8mMu50lekvUvY9VqKkPzvxthh8ao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xuanruiqi
+
+==================================================================
