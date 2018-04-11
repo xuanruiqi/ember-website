@@ -62,15 +62,6 @@ figcaption {
     text-align: center;
 }
 
-.right-box {
-    top: 20px;
-    border: 1px solid;
-}
-
-#lang-box {
-    margin: 5px;
-}
-
 .fa {
     color: white;
     text-align: center;
@@ -131,6 +122,7 @@ figcaption {
     border-radius: 3px; 
     border: 1px solid transparent;
     color: white;
+    //overflow: hidden;
 }
 
 .info-box {

@@ -11,7 +11,7 @@ SHT2018:
 `
 @misc{QiSeniorThesis2018,
   author = {Qi, Xuanrui (Ray)},
-  title = {Memory Tracing for Object-Oriented and Functional Programming},
+  title = {Elephant Tracks II: Practical and Extensible Memory Tracing},
   year = {2018},
   note = {Senior honors thesis, Tufts University},
 }
@@ -23,8 +23,8 @@ export default Route.extend({
         return [
             {
                 abbrev: "Senior Honors Thesis 2018 (in progress)",
-                citation: "Xuanrui (Ray) Qi. 2018. Garbage Collection Tracing for Object-Oriented and Functional \
-                Programming. Senior Honors Thesis, Tufts University.",
+                citation: "Xuanrui (Ray) Qi. 2018. Elephant Tracks II: Practical and Extensible Memory Tracing. \
+                Senior Honors Thesis, Tufts University.",
                 bibtex: formatBibtexBlock(uglyBibtex["SHT2018"]),
                 notes: "Committee: Sam Guyer (chair), Kathleen Fisher"
             }

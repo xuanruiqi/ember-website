@@ -1,28 +1,49 @@
 <!--
-   - Copyright(c) 2016 Xuanrui Qi
+   - Copyright(c) 2018 Xuanrui Qi
    - This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/.
 -->
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-  <div class="container">
+{{#bs-navbar 
+  backgroundColor='primary'
+  class='navbar-dark'
+  position='fixed-top'
+  type=(if inverse 'inverse') 
+  fluid=fluid collapsed=true 
+  onCollapse=(action (mut collapsed) true) 
+  onExpand=(action (mut collapsed) false) as |navbar|}}
     <a class="navbar-brand" href="#">Xuanrui</a>
+    {{navbar.toggle}}
+    {{#navbar.content}}
+      {{#navbar.nav as |nav|}}
+        {{#nav.item}}
+        {{#nav.link-to 'index'}}Home{{/nav.link-to}}
+        {{/nav.item}}
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        {{#nav.item}}
+        {{#nav.link-to 'cv'}}Curriculum Vitae{{/nav.link-to}}
+        {{/nav.item}}
 
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto">
-        {{#link-to 'index' tagName="li" class="nav-item"}}<a class="nav-link" href="">Home</a>{{/link-to}}
-        {{#link-to 'cv' tagName="li" class="nav-item"}}<a class="nav-link" href="">Curriculum Vitae</a>{{/link-to}}
-        {{#link-to 'research' tagName="li" class="nav-item"}}<a class="nav-link" href="">Research</a>{{/link-to}}
-        {{#link-to 'code' tagName="li" class="nav-item"}}<a class="nav-link" href="">Code</a>{{/link-to}}
-        {{#link-to 'personal' tagName="li" class="nav-item"}}<a class="nav-link" href="">Personal</a>{{/link-to}}
-        {{#link-to 'contact' tagName="li" class="nav-item"}}<a class="nav-link" href="">Contact</a>{{/link-to}}
-        <li class="nav-item"><a class="nav-link" href="http://blog.xuanruiqi.com">Blog</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        {{#nav.item}}
+        {{#nav.link-to 'research'}}Research{{/nav.link-to}}
+        {{/nav.item}}
+
+        {{#nav.item}}
+        {{#nav.link-to 'code'}}Code{{/nav.link-to}}
+        {{/nav.item}}
+
+        {{#nav.item}}
+        {{#nav.link-to 'personal'}}Personal{{/nav.link-to}}
+        {{/nav.item}}
+
+        {{#nav.item}}
+        {{#nav.link-to 'contact'}}Contact{{/nav.link-to}}
+        {{/nav.item}}
+
+        {{#nav.item}}
+        <a class="nav-link" href="http://blog.xuanruiqi.com">Blog</a>
+        {{/nav.item}} 
+      {{/navbar.nav}}
+    {{/navbar.content}}
+{{/bs-navbar}}

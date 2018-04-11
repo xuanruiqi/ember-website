@@ -6,13 +6,14 @@
 -->
 <br>
 <div class="row">
-    <div class="col-md-2" id="home-box">
+    <div class="col-md-2 h-100" id="home-box">
         <br>
         <h5><b>Xuanrui (Ray) Qi</b></h5>
         <h5><b>亓璇睿</b></h5>
         <p>Undergraduate CS student at Tufts University</p>
         <p>Enthusiast & researcher in programming languages</p>
-        <p><a href="assets/xuanruiqi.pub.txt">GPG public key</a></p>
+        <p><a href="assets/xuanruiqi.pub.txt">my GPG public key</a><br>
+        <a href="https://keybase.io/xuanruiqi">Keybase</a></p>
         <p>
         <a href="https://github.com/xuanruiqi" class="btn btn-contact btn-github">{{fa-icon "github" fixedWidth=true size=2}}</a>
         <a href="https://twitter.com/xuanruirqi" class="btn btn-contact btn-twitter">{{fa-icon "twitter" fixedWidth=true size=2}}</a> 
@@ -36,10 +37,42 @@
         </div>
 
         <div class="col info-box">
+            <h4>News: </h4>
+            <p>
+                <b>(June-August 2018)</b> I will be visiting and doing research with 
+                <a href="https://www.math.nagoya-u.ac.jp/~garrigue/home.html">Professor Jacques Garrigue</a> at 
+                the <a href="https://www.math.nagoya-u.ac.jp/">Graduate School of Mathematics, Nagoya 
+                University</a> from June to August 2018.
+                <br>
+                <b>(May 2018)</b> I will be graduating from Tufts University with a Bachelor of Science in Computer 
+                Science on May 20, 2018!
+            </p>            
+        </div>
+
+        <div class="col info-box">
             <h4>Ongoing projects:</h4>
             <p><b>Elephant Tracks II</b>: a portable, efficient and language-agnostic 
             memory tracing toolkit.<br>
             <b>JumboViz</b> (tentative name): a visualizer for Elephant Tracks GC traces.</p>
         </div>
+
+        <div class="col">
+            <div>
+                <a href="#" onclick="$('#block-1').slideToggle();">[日本語はこちら]</a><br>
+                <div class="hidden-block" id="block-1">
+                    <p>
+                        アメリカ・タフツ大学工学部コンピューター科学科2018年5月に卒業、学士（理学）（Bachelor of Science）の学位取得予定。2018年6月より8月まで<a href="https://www.math.nagoya-u.ac.jp/ja/">名古屋大学大学院多元数理科学研究科</a>で、<a href="https://www.math.nagoya-u.ac.jp/~garrigue/home-j.html">ジャック・ガリグ</a>（<a href="https://www.math.nagoya-u.ac.jp/~garrigue/home.html">Jacques Garrigue</a>）教授の元に訪問、研究を行う予定です。
+                    </p>
+                    <p>
+                        主な研究テーマはプログラミング言語とその理論（ガベージコレクションのアルゴリズムと実装・型理論・関数式プログラミング・プログラム検証など）。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            $('.hidden-block').hide();
+        </script>
     </div>
 </div>
