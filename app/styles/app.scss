@@ -9,6 +9,8 @@
 @import 'font-awesome';
 @import "ember-modal-dialog/ember-modal-structure";
 
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 .ember-modal-overlay.translucent {
     background-color: rgba(#808080, .77);
 }
@@ -29,7 +31,8 @@ html {
 
 body {
     padding: 100px 0 0 0;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -50,19 +53,20 @@ figcaption {
     width: 100%;
 }
 
-.footer {
-    height: 70px;
-    padding-top: 40px;
+footer {
+    height: 40px;
+    padding-top: 2%;
     position: absolute;
     bottom: 0;
     width: 100%;
+    color: grey;
 }
 
 .title {
     text-align: center;
 }
 
-.fa {
+.animated-icon {
     color: white;
     text-align: center;
     width: 100% !important;
@@ -87,6 +91,10 @@ figcaption {
 
 .fa-envelope:hover {
     color: #00a1f1;
+}
+
+.fa-quora:hover {
+    color: #aa2200;
 }
 
 .btn-contact {
@@ -117,16 +125,21 @@ figcaption {
     background-color: #00a1f1;
 }
 
+.btn-quora {
+    background-color: #aa2200;
+}
+
 #home-box {
     background-color: #2c6080; 
     border-radius: 3px; 
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     color: white;
+    margin-bottom: 2%;
     //overflow: hidden;
 }
 
 .info-box {
-    margin-bottom: 7%;
+    margin-bottom: 0;
 }
 
 .text-tooltip {
