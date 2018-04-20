@@ -134,6 +134,7 @@ footer {
     border-radius: 3px; 
     border: 0px solid transparent;
     color: white;
+    padding: 2% 1% 1% 0;
     margin-bottom: 2%;
     //overflow: hidden;
 }
@@ -145,4 +146,13 @@ footer {
 .text-tooltip {
     border-bottom: 1px dashed #999;
     text-decoration: none; 
+}
+
+.text-tooltip-white {
+    border-bottom: 1px dashed white;
+    text-decoration: none; 
+}
+
+.tooltip-inner {
+    max-width: 300px;   
 }
