@@ -26,6 +26,7 @@ export default Route.extend({
                 citation: "Xuanrui (Ray) Qi. 2018. Elephant Tracks II: Practical and Extensible Memory Tracing. \
                 Senior Honors Thesis, Tufts University.",
                 bibtex: formatBibtexBlock(uglyBibtex["SHT2018"]),
+                pdf: "senior_thesis.pdf",
                 notes: "Committee: Sam Guyer (chair), Kathleen Fisher"
             }
         ];
