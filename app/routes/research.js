@@ -1,6 +1,5 @@
 import Route from '@ember/routing/route';
 import {htmlSafe} from '@ember/string';
-import RSVP from 'rsvp';
 
 function formatBibtexBlock(str) {
     return htmlSafe('<pre>\n' + str + '\n</pre>');
