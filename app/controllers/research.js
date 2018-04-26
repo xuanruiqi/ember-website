@@ -4,7 +4,10 @@ export default Controller.extend({
     showingPopup: false,
     actions: {
         showBibtex() {
-            this.toggleProperty('showingPopup');
+            this.toggleProperty('showingBibTeX');
+        },
+        showAbstract() {
+            this.toggleProperty('showingAbstract');
         }
     }
 });

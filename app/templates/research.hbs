@@ -56,9 +56,10 @@
             <th scope="row"><em>{{paper.abbrev}}</em></th>
             <td>{{paper.citation}}
                 <br>
-                <a href="#" {{action "showBibtex"}}>[BibTeX]</a>
+                <a href="#!" {{action "showAbstract"}}>[Abstract]</a>
+                <a href="#!" {{action "showBibtex"}}>[BibTeX]</a>
                 <a href="assets/papers/{{paper.pdf}}">[PDF]</a>
-                {{#if showingPopup}}
+                {{#if showingBibTeX}}
                     {{#modal-dialog onClose="showBibtex"
                                     targetAttachment="center"
                                     translucentOverlay=true
@@ -74,6 +75,26 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" onclick={{action "showBibtex"}}>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    {{/modal-dialog}}
+                {{/if}}
+                {{#if showingAbstract}}
+                    {{#modal-dialog onClose="showBibtex"
+                                    targetAttachment="center"
+                                    translucentOverlay=true
+                                    }}
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Abstract</h5>
+                            </div>
+                            <div class="modal-body">
+                                {{paper.abstract}}
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" onclick={{action "showAbstract"}}>Close</button>
                             </div>
                         </div>
                     </div>
