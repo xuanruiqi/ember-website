@@ -8,7 +8,6 @@
 @import 'bootswatch';
 @import 'font-awesome';
 @import "ember-modal-dialog/ember-modal-structure";
-
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 .ember-modal-overlay.translucent {
@@ -53,7 +52,7 @@ figcaption {
     width: 100%;
 }
 
-footer {
+#footer {
     height: 40px;
     padding-top: 2%;
     position: absolute;
@@ -148,11 +147,30 @@ footer {
     text-decoration: none; 
 }
 
+.text-tooltip:hover {
+    color: #2c6080 !important;
+    border-bottom: none;
+    text-decoration: none; 
+}
+
 .text-tooltip-white {
     border-bottom: 1px dashed white;
     text-decoration: none; 
 }
 
+.text-tooltip-white:hover {
+    color: #1b8c9c !important;
+    border-bottom: none;
+    text-decoration: none; 
+}
+
 .tooltip-inner {
-    max-width: 300px;   
+    max-width: 400px;   
+}
+
+.copy-button {
+    color: grey;
+    position: right;
+    background: transparent;
+    border: none;
 }

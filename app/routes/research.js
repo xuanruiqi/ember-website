@@ -15,7 +15,7 @@ SHT2018:
 `
 @misc{QiSeniorThesis2018,
   author = {Qi, Xuanrui (Ray)},
-  title = {Elephant Tracks II: Practical and Extensible Memory Tracing},
+  title = {Elephant Tracks II: Practical, Extensible Memory Tracing},
   year = {2018},
   note = {Senior honors thesis, Tufts University},
 }
@@ -46,9 +46,10 @@ export default Route.extend({
     model() {
         return [{
                 abbrev: "Senior Honors Thesis 2018",
-                citation: "Xuanrui (Ray) Qi. 2018. Elephant Tracks II: Practical and Extensible Memory Tracing. \
+                citation: "Xuanrui (Ray) Qi. 2018. Elephant Tracks II: Practical, Extensible Memory Tracing. \
                 Senior Honors Thesis, Tufts University.",
                 abstract: formatPBlock(abstracts["SHT2018"]),
+                rawBibtex: uglyBibtex["SHT2018"],
                 bibtex: formatBibtexBlock(uglyBibtex["SHT2018"]),
                 pdf: "senior_thesis.pdf",
                 notes: "Committee: Sam Guyer (chair), Kathleen Fisher",
