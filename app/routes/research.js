@@ -52,6 +52,7 @@ export default Route.extend({
                 rawBibtex: uglyBibtex["SHT2018"],
                 bibtex: formatBibtexBlock(uglyBibtex["SHT2018"]),
                 pdf: "senior_thesis.pdf",
+                extras: [{type: "Slides", url: "assets/papers/senior_thesis_slides.pdf"}],
                 notes: "Committee: Sam Guyer (chair), Kathleen Fisher",
             }]
         }

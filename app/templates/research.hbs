@@ -59,6 +59,9 @@
                 <a href="#!" {{action "showAbstract"}}>[Abstract]</a>
                 <a href="#!" {{action "showBibtex"}}>[BibTeX]</a>
                 <a href="assets/papers/{{paper.pdf}}">[PDF]</a>
+                {{#each paper.extras as |e|}}
+                <a href="{{e.url}}">[{{e.type}}]</a>
+                {{/each}}
                 {{#if showingBibTeX}}
                     {{#modal-dialog onClose="showBibtex"
                                     targetAttachment="center"
