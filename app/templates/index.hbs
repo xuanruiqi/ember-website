@@ -35,7 +35,7 @@
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-6">
-                            <div style="height: 170px;" id="address-en">
+                            <div style="height: 190px;" class="address" id="en">
                                 <p>
                                     <b>{{fa-icon "map-marker"}} Address (Jun-Aug 2018):</b>
                                     <br>Xuanrui Qi
@@ -46,7 +46,7 @@
                                     <br><a href="https://goo.gl/maps/msJyKXDAoxQ2">View on Google Maps</a>
                                 </p>
                             </div>
-                            <div style="height: 170px;" id="address-ja">
+                            <div style="height: 190px;" class="address" id="ja">
                                 <p>
                                     <b>{{fa-icon "map-marker"}} 住所 (2018年6〜8月):</b>
                                     <br>Xuanrui QI (亓 璇睿)
@@ -55,9 +55,22 @@
                                     <br><a href="https://goo.gl/maps/msJyKXDAoxQ2">Googleマップで見る</a>
                                 </p>
                             </div>
+                            <div style="height: 190px;" class="address" id="future">
+                                <p>
+                                    <b>{{fa-icon "map-marker"}} Address (Sept 2018-future):</b>
+                                    <br>Xuanrui Qi
+                                    <br>Department of Computer Science
+                                    <br>Halligan Hall
+                                    <br>161 College Avenue
+                                    <br>Medford, MA 02144
+                                    <br>United States of America
+                                    <br><a href="https://goo.gl/maps/8geAfJ31DPP2">View on Google Maps</a>
+                                </p>
+                            </div>
                             <p>
-                                <a href="#!" onclick="toggleEn();">[EN]</a>
-                                <a href="#!" onclick="toggleJa();">[JA]</a>
+                                <a href="#!" onclick="toggleAddr('en');">[EN]</a>
+                                <a href="#!" onclick="toggleAddr('ja');">[JA]</a>
+                                <a href="#!" onclick="toggleAddr('future')">[From Sept 2018]</a>
                             </p>
                             <p>
                                 <b>{{fa-icon "envelope"}}</b> <a href="mailto:me@xuanruiqi.com">me@xuanruiqi.com</a><br/>
@@ -169,16 +182,12 @@
     </div>
 </div>
 <script>
-    $('#address-ja').hide();
+    $('.address').hide();
+    $('.address').filter('#en').show();
 
-    function toggleEn() {
-        $('#address-ja').hide();
-        $('#address-en').show();
-    }
-
-    function toggleJa() {
-        $('#address-en').hide();
-        $('#address-ja').show();
+    function toggleAddr(addr) {
+        $('.address').hide();
+        $('.address').filter('#' + addr).show();
     }
 
     $('.hidden-block').hide();
