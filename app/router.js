@@ -25,6 +25,7 @@ Router.map(function() {
   this.route('cv');
   this.route('cv-cn');
   this.route('cv-jp');
+  this.route('secure');
 });
 
 export default Router;
