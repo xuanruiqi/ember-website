@@ -19,13 +19,16 @@ Router.map(function() {
   this.route('quotes');
   this.route('credits');
   this.route('contact');
-  this.route('research');
+  this.route('research', function () {
+    this.route('paperdetails', { path: '/:paper_id', templateName: 'research/paperdetails' });
+  });
   this.route('code');
   this.route('personal');
   this.route('cv');
   this.route('cv-cn');
   this.route('cv-jp');
   this.route('secure');
+  this.route('paper', { path : 'paper/:paper_id' } );
 });
 
 export default Router;

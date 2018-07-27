@@ -9,5 +9,9 @@ export default Controller.extend({
         showAbstract() {
             this.toggleProperty('showingAbstract');
         }
-    }
+    },
+
+    reverse: function(){
+        return this.get('model').toArray().reverse();
+    }.property('model.[]')
 });

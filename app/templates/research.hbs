@@ -65,65 +65,17 @@ to these projects occasionally.</p>
         <th scope="col">Notes</th>
     </thead>
     <tbody>
-        {{#each model as |paper|}}
+        {{#each reverse as |paper|}}
         <tr>
             <th scope="row"><em>{{paper.abbrev}}</em></th>
-            <td>{{paper.citation}}
+            <td><b>{{#link-to 'paper' paper.id}}{{paper.title}}{{/link-to}}</b>
                 <br>
-                <a href="#!" {{action "showAbstract"}}>[Abstract]</a>
-                <a href="#!" {{action "showBibtex"}}>[BibTeX]</a>
-                <a href="assets/papers/{{paper.pdf}}">[PDF]</a>
+                {{paper.citation}}
+                <br>
                 {{#each paper.extras as |e|}}
                 <a href="{{e.url}}">[{{e.type}}]</a>
                 {{/each}}
-                {{#if showingBibTeX}}
-                    {{#modal-dialog onClose="showBibtex"
-                                    targetAttachment="center"
-                                    translucentOverlay=true
-                                    }}
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">BibTeX</h5>
-                            </div>
-                            <div class="modal-body">
-                                {{paper.bibtex}}
-                                {{#copy-button
-                                  clipboardText=paper.rawBibtex
-                                  classNames="copy-button float-right"
-                                  title="Copy to clipboard"
-                                }}
-                                {{fa-icon "paste" class="paste-button"}}
-                                {{/copy-button}}
-                            <br>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" onclick={{action "showBibtex"}}>Close</button>
-                            </div>
-                        </div>
-                    </div>
-                    {{/modal-dialog}}
-                {{/if}}
-                {{#if showingAbstract}}
-                    {{#modal-dialog onClose="showBibtex"
-                                    targetAttachment="center"
-                                    translucentOverlay=true
-                                    }}
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Abstract</h5>
-                            </div>
-                            <div class="modal-body">
-                                {{paper.abstract}}
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" onclick={{action "showAbstract"}}>Close</button>
-                            </div>
-                        </div>
-                    </div>
-                    {{/modal-dialog}}
-                {{/if}}
+                {{outlet}}
             </td>
             <td>{{paper.notes}}</td>
         </tr>
@@ -149,3 +101,16 @@ to these projects occasionally.</p>
     <li>Student member, ACM (Association of Computing Machinery)</li>
     <li>Member, ACM <a href="https://www.sigplan.org">SIGPLAN</a> (Special Interest Group on Programming Languages)</li>
 </ul>
+
+<script>
+    function hideAbstract(abbr) {
+        $('.abstract').filter('#' + abbr).hide();
+    }
+
+    function showAbstract(lk) {
+        let abbr = $(lk).data("abbr");
+        $('.abstract').filter('#' + abbr).show();
+    }
+
+    $('.abstract').hide();
+</script>
