@@ -86,6 +86,8 @@ export default Service.extend({
                     authors: "Xuanrui (Ray) Qi",
                     citation: htmlSafe("<b>Xuanrui (Ray) Qi</b>. 2018.  \
                     Senior Honors Thesis, Tufts University."),
+                    citationFull: htmlSafe("<b>Xuanrui (Ray) Qi</b>. 2018.  \
+                    Elephant Tracks II: Practical, Extensible Memory Tracing. Senior Honors Thesis, Tufts University."),
                     abstract: formatPBlock(abstracts["SHT2018"]),
                     rawBibtex: uglyBibtex["SHT2018"],
                     bibtex: formatBibtexBlock(uglyBibtex["SHT2018"]),
@@ -102,6 +104,9 @@ export default Service.extend({
                     authors: htmlSafe("Reynald Affeldt, Jacques Garrigue, <b>Xuanrui Qi</b>, and Kazunari Tanaka"),
                     citation: htmlSafe("Reynald Affeldt, Jacques Garrigue, <b>Xuanrui Qi</b>, and Kazunari Tanaka. 2018. \
                     In <i>Proceedings of the 35th Conference \
+                    of the Japan Society for Software Science and Technology (JSSST 2018)</i>. <i>Forthcoming</i>."),
+                    citationFull: htmlSafe("Reynald Affeldt, Jacques Garrigue, <b>Xuanrui Qi</b>, and Kazunari Tanaka. 2018. \
+                    Proving Tree Algorithms for Succint Data Structures. In <i>Proceedings of the 35th Conference \
                     of the Japan Society for Software Science and Technology (JSSST 2018)</i>. <i>Forthcoming</i>."),
                     abstract: formatPBlock(abstracts["JSSST2018"]),
                     rawBibtex: uglyBibtex["JSSST2018"],

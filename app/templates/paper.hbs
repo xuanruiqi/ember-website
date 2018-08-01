@@ -5,7 +5,7 @@
 
 <h5>Authors: {{model.authors}}</h5>
 <hr>
-<p>{{model.citation}}<br/>
+<p>{{model.citationFull}}<br/>
     {{#each model.extras as |e|}}
         <a href="{{rootURL}}{{e.url}}">[{{e.type}}]</a>
     {{/each}}
@@ -16,4 +16,4 @@
     {{model.abstract}}
 </p>
 <br/>
-<h5>{{#link-to 'research'}}Go back{{/link-to}}</h5>
+<h5>{{#link-to 'research'}}{{fa-icon 'arrow-circle-left'}} Go back{{/link-to}}</h5>
