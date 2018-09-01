@@ -111,6 +111,10 @@ export default Service.extend({
                     abstract: formatPBlock(abstracts["JSSST2018"]),
                     rawBibtex: uglyBibtex["JSSST2018"],
                     bibtex: formatBibtexBlock(uglyBibtex["JSSST2018"]),
+                    extras: [
+                        {type: "PDF", url: "assets/papers/jssst2018.pdf"},
+                        {type: "GitHub", url: "https://github.com/affeldt-aist/succinct"}
+                    ],
                     notes: htmlSafe("non-refereed conference proceedings")
                 }
                 
