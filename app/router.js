@@ -29,6 +29,7 @@ Router.map(function() {
   this.route('cv-jp');
   this.route('secure');
   this.route('paper', { path : 'paper/:paper_id' } );
+  this.route('publications');
 });
 
 export default Router;

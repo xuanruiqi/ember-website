@@ -1,0 +1,62 @@
+<!--
+   - Copyright(c) 2018 Xuanrui Qi
+   - This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+<h2>Publications</h2><br>
+
+<h3>Papers</h3><br>
+<table class="table">
+    <thead>
+        <th scope="col">Abbreviation</th>
+        <th scope="col">Citation</th>
+        <th scope="col">Notes</th>
+    </thead>
+    <tbody>
+        {{#each reverse as |paper|}}
+        <tr>
+            <th scope="row"><em>{{paper.abbrev}}</em></th>
+            <td><b>{{#link-to 'paper' paper.id}}{{paper.title}}{{/link-to}}</b>
+                <br>
+                {{paper.citation}}
+                <br>
+                {{#each paper.extras as |e|}}
+                <a href="{{e.url}}">[{{e.type}}]</a>
+                {{/each}}
+                {{outlet}}
+            </td>
+            <td>{{paper.notes}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<br>
+
+<h3>Posters, Presentations &amp; Talks</h3>
+<table class="table">
+    <thead>
+        <th scope="col">Venue</th>
+        <th scope="col">Title</th>
+        <th scope="col">Notes</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">SPLASH 2018 Student Research Competition</th>
+            <td><b>A Practical and Extensible Framework for Garbage Collection Tracing</b></td>
+            <td>Poster presentation based on my senior honors thesis work.</td>
+        </tr>
+    </tbody>
+</table><br>
+
+<h3>Non-research Technical Writing</h3>
+<ol>
+    <li>
+        my final report for a directed study in spring 2017: <a href="assets/documents/report-193.pdf">[PDF]</a> 
+        <a href="assets/documents/Report.lhs">[Literate Haskell]</a>
+    </li>
+    <li>
+        my final report for COMP 116 Security in fall 2017: <a href="assets/documents/report-116.pdf">[PDF]</a>
+        <a href="assets/documents/InsertionSort.v">[Coq code]</a>
+    </li>
+</ol><br>

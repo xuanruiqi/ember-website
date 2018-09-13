@@ -104,18 +104,19 @@ export default Service.extend({
                     authors: htmlSafe("Reynald Affeldt, Jacques Garrigue, <b>Xuanrui Qi</b>, and Kazunari Tanaka"),
                     citation: htmlSafe("Reynald Affeldt, Jacques Garrigue, <b>Xuanrui Qi</b>, and Kazunari Tanaka. 2018. \
                     In <i>Proceedings of the 35th Conference \
-                    of the Japan Society for Software Science and Technology (JSSST 2018)</i>. <i>Forthcoming</i>."),
+                    of the Japan Society for Software Science and Technology (JSSST 2018)</i>."),
                     citationFull: htmlSafe("Reynald Affeldt, Jacques Garrigue, <b>Xuanrui Qi</b>, and Kazunari Tanaka. 2018. \
                     Proving Tree Algorithms for Succint Data Structures. In <i>Proceedings of the 35th Conference \
-                    of the Japan Society for Software Science and Technology (JSSST 2018)</i>. <i>Forthcoming</i>."),
+                    of the Japan Society for Software Science and Technology (JSSST 2018)</i>."),
                     abstract: formatPBlock(abstracts["JSSST2018"]),
                     rawBibtex: uglyBibtex["JSSST2018"],
                     bibtex: formatBibtexBlock(uglyBibtex["JSSST2018"]),
                     extras: [
                         {type: "PDF", url: "assets/papers/jssst2018.pdf"},
-                        {type: "GitHub", url: "https://github.com/affeldt-aist/succinct"}
+                        {type: "GitHub", url: "https://github.com/affeldt-aist/succinct"},
+                        {type: htmlSafe("Slides (in Japanese)"), url: "assets/papers/jssst2018_slides.pdf"}
                     ],
-                    notes: htmlSafe("non-refereed conference proceedings")
+                    notes: htmlSafe("Non-refereed conference proceedings. The paper was presented by Jacques Garrigue.")
                 }
                 
         ]);
